@@ -42,6 +42,26 @@ fun WelcomeScreen(
         Column(
 
         ) {
+            Text(
+                text = "Selamat Datang",
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                color = TextColor
+            )
+            Column(){
+                Text(
+                    text = "Khonsadiya Nasywa Salsabila",
+                    fontSize = 18.sp,
+                    color = TextColor
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = "20230140112",
+                    fontSize = 16.sp,
+                    color = TextColor.copy(alpha = 0.7f)
+                )
+
+            }
 
         }
     }
