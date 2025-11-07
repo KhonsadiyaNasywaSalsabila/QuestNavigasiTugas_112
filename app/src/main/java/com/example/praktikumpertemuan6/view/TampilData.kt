@@ -26,6 +26,10 @@ fun TampilData(
     onNavigateToWelcome: () -> Unit,
     onNavigateToForm: () -> Unit
 ) {
+    val lightPurpleBg = Color(0xFFF0E6FF)
+    val darkPurpleButton = Color(0xFF7C3AED)
+    val lightPurpleButton = Color(0xFFB794F6)
+    val titleColor = Color(0xFF4A00E0)
 
 
     Column(
