@@ -215,6 +215,17 @@ fun FormDataDiri2(modifier: Modifier = Modifier) {
                 color = Color.White
             )
         }
+        if (showDialog){
+            AlertDialog(
+                onDismissRequest = { showDialog = false },
+                title = {
+                    Text(
+                        text = "Data Pendaftaran",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 18.sp
+                    )
+                },
+        }
 
     }
 
