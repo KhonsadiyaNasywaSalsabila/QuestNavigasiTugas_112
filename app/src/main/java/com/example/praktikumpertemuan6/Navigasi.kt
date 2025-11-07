@@ -31,6 +31,14 @@ fun AplikasiNavigasi(
             startDestination = AlurLayar.Welcome.name,
             modifier = Modifier.padding(innerPadding)
         ) {
+            composable(route = AlurLayar.Welcome.name) {
+                WelcomeScreen(
+                    modifier = Modifier.fillMaxSize(),
+                    onNavigateToForm = {
+                        navController.navigate(AlurLayar.Form.name)
+                    }
+                )
+            }
 
         }
     }
