@@ -72,10 +72,30 @@ fun TampilData(
                     fontWeight = FontWeight.Normal,
                     color = Color.Black
                 )
-
-
-
-
             }
+        }
+        Button(
+            onClick = onNavigateToWelcome,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp),
+            shape = RoundedCornerShape(12.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = darkPurpleButton)
+        ) {
+            Text(text = "Beranda", fontSize = 16.sp)
+        }
 
+        Button(
+            onClick = onNavigateToForm,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp),
+            shape = RoundedCornerShape(12.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = lightPurpleButton)
+        ) {
+            Text(text = "Formulir Pendaftaran", fontSize = 16.sp, color = darkPurpleButton)
+        }
+
+
+    }
 }
