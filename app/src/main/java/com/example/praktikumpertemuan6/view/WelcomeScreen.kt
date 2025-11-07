@@ -48,6 +48,12 @@ fun WelcomeScreen(
                 fontWeight = FontWeight.Bold,
                 color = TextColor
             )
+            Image(
+                painter = painterResource(id = R.drawable.logo),
+                contentDescription = "Logo Placeholder",
+                modifier = Modifier.size(150.dp)
+            )
+
             Column(){
                 Text(
                     text = "Khonsadiya Nasywa Salsabila",
