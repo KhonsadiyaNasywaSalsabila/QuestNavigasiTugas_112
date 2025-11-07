@@ -233,6 +233,17 @@ fun FormDataDiri2(modifier: Modifier = Modifier) {
                         Text(text = "Alamat : $alamat", fontSize = 14.sp, modifier = Modifier.padding(top = 4.dp))
                     }
                 },
+                confirmButton = {
+                    TextButton(
+                        onClick = { showDialog = false }
+                    ) {
+                        Text("OK", color = purpleButton, fontWeight = FontWeight.Bold)
+                    }
+                },
+                containerColor = Color.White,
+                shape = RoundedCornerShape(16.dp)
+            )
+
 
         }
 
