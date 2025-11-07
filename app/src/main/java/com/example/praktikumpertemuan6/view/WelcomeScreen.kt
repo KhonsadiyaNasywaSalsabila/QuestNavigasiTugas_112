@@ -68,7 +68,15 @@ fun WelcomeScreen(
                 )
 
             }
-
+            Button(
+                onClick = onNavigateToForm,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = DarkPurple)
+            ) {
+                Text(text = "Submit", fontSize = 18.sp)
+            }
 
         }
     }
