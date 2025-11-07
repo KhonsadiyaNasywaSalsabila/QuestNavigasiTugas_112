@@ -39,5 +39,9 @@ import androidx.compose.ui.Alignment
 @Composable
 fun FormDataDiri2(modifier: Modifier = Modifier) {
 
+    val purpleBackground = Color(0xFFE6D5F5)
+    val purpleButton = Color(0xFF7C3AED)
+    val purpleHeader = Color(0xFFB794F6)
+
 
 }
