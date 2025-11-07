@@ -134,6 +134,36 @@ fun FormDataDiri2(modifier: Modifier = Modifier) {
                     }
                 }
             }
+            Text(
+                text = "STATUS PERKAWINAN",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Medium,
+                color = Color.Gray,
+                modifier = Modifier.padding(top = 20.dp, bottom = 8.dp)
+            )
+            Column {
+                statusPerkawinan.forEach { item ->
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .selectable(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            )
+                            .padding(vertical = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(
+                            selected = textStatus == item,
+                            onClick = {
+                                textStatus = item
+                            }
+                        )
+                        Text(text = item, modifier = Modifier.padding(start = 8.dp))
+                    }
+                }
+            }
+
 
 
 
