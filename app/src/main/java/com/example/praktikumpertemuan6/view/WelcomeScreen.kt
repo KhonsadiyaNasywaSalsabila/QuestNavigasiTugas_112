@@ -30,7 +30,7 @@ import com.example.praktikumpertemuan6.R
 @Composable
 fun WelcomeScreen(
     modifier: Modifier = Modifier,
-
+    onNavigateToForm: () -> Unit
 ) {
     val LightPurple = Color(0xFFF0E6FF)
     val DarkPurple = Color(0xFF6200EE)
@@ -68,6 +68,7 @@ fun WelcomeScreen(
                 )
 
             }
+
 
         }
     }
