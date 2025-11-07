@@ -32,6 +32,9 @@ fun WelcomeScreen(
     modifier: Modifier = Modifier,
 
 ) {
+    val LightPurple = Color(0xFFF0E6FF)
+    val DarkPurple = Color(0xFF6200EE)
+    val TextColor = Color(0xFF4A00E0)
 
     Surface(
 
