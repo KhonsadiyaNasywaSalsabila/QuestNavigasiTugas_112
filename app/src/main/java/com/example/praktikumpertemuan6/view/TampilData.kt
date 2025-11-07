@@ -65,7 +65,7 @@ fun TampilData(
                     fontWeight = FontWeight.Medium,
                     color = Color.Gray
                 )
-
+                Spacer(modifier = Modifier.height(4.dp))
                 Text(
                     text = data.second,
                     fontSize = 18.sp,
@@ -73,7 +73,9 @@ fun TampilData(
                     color = Color.Black
                 )
             }
+            Spacer(modifier = Modifier.height(16.dp))
         }
+        Spacer(modifier = Modifier.weight(1f))
         Button(
             onClick = onNavigateToWelcome,
             modifier = Modifier
@@ -84,7 +86,7 @@ fun TampilData(
         ) {
             Text(text = "Beranda", fontSize = 16.sp)
         }
-
+        Spacer(modifier = Modifier.height(8.dp))
         Button(
             onClick = onNavigateToForm,
             modifier = Modifier
