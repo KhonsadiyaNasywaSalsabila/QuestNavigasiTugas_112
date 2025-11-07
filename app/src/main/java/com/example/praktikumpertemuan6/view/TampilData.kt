@@ -66,6 +66,14 @@ fun TampilData(
                     color = Color.Gray
                 )
 
+                Text(
+                    text = data.second,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Normal,
+                    color = Color.Black
+                )
+
+
 
 
             }
