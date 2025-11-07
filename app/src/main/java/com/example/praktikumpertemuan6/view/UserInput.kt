@@ -225,6 +225,15 @@ fun FormDataDiri2(modifier: Modifier = Modifier) {
                         fontSize = 18.sp
                     )
                 },
+                text = {
+                    Column {
+                        Text(text = "Nama : $nama", fontSize = 14.sp)
+                        Text(text = "Gender : $jenis", fontSize = 14.sp, modifier = Modifier.padding(top = 4.dp))
+                        Text(text = "Status : $status", fontSize = 14.sp, modifier = Modifier.padding(top = 4.dp))
+                        Text(text = "Alamat : $alamat", fontSize = 14.sp, modifier = Modifier.padding(top = 4.dp))
+                    }
+                },
+
         }
 
     }
