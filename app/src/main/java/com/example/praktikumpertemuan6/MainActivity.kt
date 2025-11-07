@@ -1,5 +1,6 @@
 package com.example.praktikumpertemuan6
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,17 +18,13 @@ import com.example.praktikumpertemuan6.view.TampilData
 import com.example.praktikumpertemuan6.view.WelcomeScreen
 
 class MainActivity : ComponentActivity() {
+    @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             PraktikumPertemuan6Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TampilData(
-                        modifier = Modifier.padding(innerPadding)
-
-                    )
-                }
+                AplikasiNavigasi()
             }
         }
     }
