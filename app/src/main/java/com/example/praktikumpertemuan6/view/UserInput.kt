@@ -51,6 +51,16 @@ fun FormDataDiri2(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.Start
     ){
+        Text(
+            text = "Formulir Pendaftaran",
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.White,
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(purpleHeader, shape = RoundedCornerShape(8.dp))
+                .padding(16.dp)
+        )
 
     }
 
