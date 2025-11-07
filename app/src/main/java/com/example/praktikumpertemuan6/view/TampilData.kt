@@ -41,6 +41,14 @@ fun TampilData(
     Column(
 
     ) {
+        Text(
+            text = "List Daftar Peserta",
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = titleColor,
+            modifier = Modifier.padding(top = 16.dp, bottom = 24.dp)
+        )
+
 
     }
 }
