@@ -39,6 +39,14 @@ fun AplikasiNavigasi(
                     }
                 )
             }
+            composable(route = AlurLayar.Form.name){
+                FormDataDiri2(
+                    modifier = Modifier.fillMaxSize(),
+                    onNavigateToTampilData = {
+
+                    }
+                )
+            }
 
         }
     }
