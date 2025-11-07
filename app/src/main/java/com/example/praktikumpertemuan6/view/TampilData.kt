@@ -51,7 +51,23 @@ fun TampilData(
             color = titleColor,
             modifier = Modifier.padding(top = 16.dp, bottom = 24.dp)
         )
+        participantData.forEach { data ->
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color.White, shape = RoundedCornerShape(12.dp))
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = data.first,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = Color.Gray
+                )
 
 
-    }
+
+            }
+
 }
