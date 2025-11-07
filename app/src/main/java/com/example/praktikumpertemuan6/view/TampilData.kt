@@ -31,6 +31,12 @@ fun TampilData(
     val lightPurpleButton = Color(0xFFB794F6)
     val titleColor = Color(0xFF4A00E0)
 
+    val participantData = listOf(
+        Pair("NAMA LENGKAP", "Aprilia Kurnianti"),
+        Pair("JENIS KELAMIN", "Perempuan"),
+        Pair("STATUS PERKAWINAN", "Lajang"),
+        Pair("ALAMAT", "Sleman")
+    )
 
     Column(
 
