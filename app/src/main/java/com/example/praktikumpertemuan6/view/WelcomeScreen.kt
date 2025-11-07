@@ -32,48 +32,51 @@ fun WelcomeScreen(
     modifier: Modifier = Modifier,
     onNavigateToForm: () -> Unit
 ) {
-    val LightPurple = Color(0xFFF0E6FF)
-    val DarkPurple = Color(0xFF6200EE)
-    val TextColor = Color(0xFF4A00E0)
+    val lightPurple = Color(0xFFF0E6FF)
+    val darkPurple = Color(0xFF6200EE)
+    val textColor = Color(0xFF4A00E0)
 
     Surface(
-
+        modifier = Modifier.fillMaxSize(),
+        color = lightPurple
     ) {
         Column(
-
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 32.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.SpaceAround
         ) {
             Text(
                 text = "Selamat Datang",
                 fontSize = 32.sp,
                 fontWeight = FontWeight.Bold,
-                color = TextColor
+                color = textColor
             )
             Image(
                 painter = painterResource(id = R.drawable.logo),
                 contentDescription = "Logo Placeholder",
                 modifier = Modifier.size(150.dp)
             )
-
-            Column(){
+            Column(horizontalAlignment = Alignment.CenterHorizontally){
                 Text(
                     text = "Khonsadiya Nasywa Salsabila",
                     fontSize = 18.sp,
-                    color = TextColor
+                    color = textColor
                 )
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(
                     text = "20230140112",
                     fontSize = 16.sp,
-                    color = TextColor.copy(alpha = 0.7f)
+                    color = textColor.copy(alpha = 0.7f)
                 )
-
             }
             Button(
                 onClick = onNavigateToForm,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(50.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = DarkPurple)
+                colors = ButtonDefaults.buttonColors(containerColor = darkPurple)
             ) {
                 Text(text = "Submit", fontSize = 18.sp)
             }
