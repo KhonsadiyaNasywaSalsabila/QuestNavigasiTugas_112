@@ -43,7 +43,9 @@ fun AplikasiNavigasi(
                 FormDataDiri2(
                     modifier = Modifier.fillMaxSize(),
                     onNavigateToTampilData = {
-
+                        navController.navigate(AlurLayar.Data.name) {
+                            popUpTo(AlurLayar.Form.name) { inclusive = true }
+                        }
                     }
                 )
             }
@@ -51,8 +53,18 @@ fun AplikasiNavigasi(
                 TampilData(
                     modifier = Modifier.fillMaxSize(),
                     onNavigateToWelcome = {
-
+                        navController.navigate(AlurLayar.Welcome.name) {
+                            popUpTo(navController.graph.findStartDestination().id) {
+                                inclusive = true
+                            }
+                        }
+                    },
+                    onNavigateToForm = {
+                        navController.navigate(AlurLayar.Form.name) {
+                            popUpTo(AlurLayar.Data.name) { inclusive = true }
+                        }
                     }
+
                 )
             }
         }
