@@ -39,7 +39,10 @@ fun TampilData(
     )
 
     Column(
-
+        modifier = modifier
+            .fillMaxSize()
+            .background(lightPurpleBg)
+            .padding(16.dp)
     ) {
         Text(
             text = "List Daftar Peserta",
