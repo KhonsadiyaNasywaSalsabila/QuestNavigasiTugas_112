@@ -188,6 +188,12 @@ fun FormDataDiri2(modifier: Modifier = Modifier) {
             )
 
         }
+        Button(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 24.dp)
+                .height(50.dp),
+        )
 
     }
 
