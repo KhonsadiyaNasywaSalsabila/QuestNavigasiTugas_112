@@ -47,7 +47,14 @@ fun AplikasiNavigasi(
                     }
                 )
             }
+            composable(route = AlurLayar.Data.name){
+                TampilData(
+                    modifier = Modifier.fillMaxSize(),
+                    onNavigateToWelcome = {
 
+                    }
+                )
+            }
         }
     }
 }
